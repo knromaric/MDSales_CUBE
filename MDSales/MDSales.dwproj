@@ -6,6 +6,18 @@
     <Name>MDSales.database</Name>
     <FullPath>MDSales.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>WWISalesCube.cube</Name>
+      <FullPath>WWISalesCube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>WWISalesCube.partitions</Name>
+          <FullPath>WWISalesCube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>Employee.dim</Name>
