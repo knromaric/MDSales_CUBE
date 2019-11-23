@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7750" scrolltop="2118" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="89" x="28866" y="18018" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="30" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9802" scrolltop="5123" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="89" x="28866" y="18018" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -236,12 +236,43 @@
                     <point x="6902" y="12400" />
                   </connector>
                 </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="NewCustomerLU" left="-4763" top="17989" logicalid="28" controlid="15" masterid="0" hint1="0" hint2="0" width="3479" height="1873" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000970d000051070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="NewCustomerLU" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-1584" top="17976" logicalid="29" controlid="16" masterid="0" hint1="0" hint2="0" width="5135" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Customer-NewCustomerLU]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="15" destid="3" sourceattachpoint="11" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="-1284" y="18375" />
+                    <point x="983" y="18375" />
+                    <point x="983" y="18400" />
+                    <point x="3251" y="18400" />
+                  </connector>
+                </ddscontrol>
               </dds>
 </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>-7750</DiagramViewPortLeft>
-            <DiagramViewPortTop>2118</DiagramViewPortTop>
+            <DiagramViewPortLeft>-9802</DiagramViewPortLeft>
+            <DiagramViewPortTop>5123</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>89</DiagramZoom>
@@ -318,7 +349,7 @@
                   <xs:element name="Valid_x0020_From" msprop:design-time-name="2b84ca48-e025-4cbc-843b-113106f6cacd" msprop:DbColumnName="Valid From" msprop:FriendlyName="Valid From" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="Valid_x0020_To" msprop:design-time-name="e3b19513-3ba0-4b7b-bac2-6a2859141263" msprop:DbColumnName="Valid To" msprop:FriendlyName="Valid To" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="Lineage_x0020_Key" msprop:design-time-name="776771f8-ac15-40bc-a8e2-0567004c1cf9" msprop:DbColumnName="Lineage Key" msprop:FriendlyName="Lineage Key" type="xs:int" minOccurs="0" />
-                  <xs:element name="Manager_x0020_Key" msprop:DbColumnName="Manager Key" msprop:design-time-name="f09b3a6b-282f-41e8-ab84-05e86fa78677" type="xs:int" minOccurs="0" />
+                  <xs:element name="Manager_x0020_Key" msprop:design-time-name="f09b3a6b-282f-41e8-ab84-05e86fa78677" msprop:DbColumnName="Manager Key" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -372,6 +403,7 @@
                   <xs:element name="Valid_x0020_From" msprop:design-time-name="a750349b-be93-40a4-942a-251ba0f84ddd" msprop:DbColumnName="Valid From" msprop:FriendlyName="Valid From" type="xs:dateTime" />
                   <xs:element name="Valid_x0020_To" msprop:design-time-name="5a6a10e6-6aee-4b59-83f9-da3046dd5eac" msprop:DbColumnName="Valid To" msprop:FriendlyName="Valid To" type="xs:dateTime" />
                   <xs:element name="Lineage_x0020_Key" msprop:design-time-name="bcb69ae3-633a-449e-b054-da4dfa669d05" msprop:DbColumnName="Lineage Key" msprop:FriendlyName="Lineage Key" type="xs:int" />
+                  <xs:element name="CustomerTypeID" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="CASE&#xD;&#xA;WHEN [WWI Customer ID] &gt;= 300 THEN 1&#xD;&#xA;ELSE 2&#xD;&#xA;END" msprop:IsLogical="True" msprop:design-time-name="68a19455-1044-4223-978a-c54156c2da1b" msprop:DbColumnName="CustomerTypeID" type="xs:int" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -574,6 +606,20 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
+            <xs:element name="NewCustomerLU" msprop:design-time-name="17008e74-9a7d-4fc7-af04-a096e71e0c88" msprop:IsLogical="True" msprop:FriendlyName="NewCustomerLU" msprop:DbTableName="NewCustomerLU" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        1 AS CustomerTypeID, 'New Customer' AS CustomerType&#xD;&#xA;UNION&#xD;&#xA;SELECT        2 AS CustomerTypeID, 'Repeat Customer' AS CustomerType" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CustomerTypeID" msdata:ReadOnly="true" msprop:design-time-name="87b5f2b8-5b72-4241-9cb3-70e1dbb4830c" msprop:DbColumnName="CustomerTypeID" msprop:FriendlyName="CustomerTypeID" type="xs:int" />
+                  <xs:element name="CustomerType" msdata:ReadOnly="true" msprop:design-time-name="a3b99112-365b-4103-b8c2-68ce9f5131ac" msprop:DbColumnName="CustomerType" msprop:FriendlyName="CustomerType" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
           </xs:choice>
         </xs:complexType>
         <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -600,6 +646,10 @@
         <xs:unique name="Dimension_City_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
           <xs:selector xpath=".//Dimension_City" />
           <xs:field xpath="City_x0020_Key" />
+        </xs:unique>
+        <xs:unique name="NewCustomerLU_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//NewCustomerLU" />
+          <xs:field xpath="CustomerTypeID" />
         </xs:unique>
         <xs:keyref name="FK_Fact_Sale_Delivery_Date_Key_Dimension_Date" refer="Dimension_Date_Constraint1">
           <xs:selector xpath=".//Fact_Sale" />
@@ -629,6 +679,7 @@
       <xs:annotation>
         <xs:appinfo>
           <msdata:Relationship name="FK_Fact_Sale_Salesperson_Key_Dimension_Employee" msdata:parent="Dimension_Employee" msdata:child="Fact_Sale" msdata:parentkey="Employee_x0020_Key" msdata:childkey="Salesperson_x0020_Key" msprop:IsLogical="True" />
+          <msdata:Relationship name="Customer-NewCustomerLU" msdata:parent="NewCustomerLU" msdata:child="Dimension_Customer" msdata:parentkey="CustomerTypeID" msdata:childkey="CustomerTypeID" msprop:IsLogical="True" msprop:Description="" />
         </xs:appinfo>
       </xs:annotation>
     </xs:schema>

@@ -27,6 +27,14 @@
       <Name>Employee.dim</Name>
       <FullPath>Employee.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>New Customer LU.dim</Name>
+      <FullPath>New Customer LU.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
