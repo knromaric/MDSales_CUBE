@@ -8,24 +8,24 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>WWISalesCube.cube</Name>
-      <FullPath>WWISalesCube.cube</FullPath>
+      <Name>WWISales.cube</Name>
+      <FullPath>WWISales.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>WWISalesCube.partitions</Name>
-          <FullPath>WWISalesCube.partitions</FullPath>
+          <Name>WWISales.partitions</Name>
+          <FullPath>WWISales.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Employee.dim</Name>
-      <FullPath>Employee.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Invoice.dim</Name>
       <FullPath>Invoice.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Employee.dim</Name>
+      <FullPath>Employee.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
