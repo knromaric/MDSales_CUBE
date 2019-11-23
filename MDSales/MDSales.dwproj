@@ -23,6 +23,10 @@
       <Name>Employee.dim</Name>
       <FullPath>Employee.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Invoice.dim</Name>
+      <FullPath>Invoice.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
