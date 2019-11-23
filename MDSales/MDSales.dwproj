@@ -35,6 +35,10 @@
       <Name>New Customer LU.dim</Name>
       <FullPath>New Customer LU.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Item.dim</Name>
+      <FullPath>Stock Item.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
