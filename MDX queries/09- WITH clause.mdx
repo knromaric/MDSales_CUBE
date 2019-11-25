@@ -1,0 +1,14 @@
+-- WITH , like a common table expression 
+WITH MEMBER Measures.[Avg Unit Profit] AS
+Measures.Profit / Measures.Quantity, Format_string = "Currency"
+
+	SET [States] AS 
+	{[City].[State Province].[State Province].[Louisiana],
+	[City].[State Province].[State Province].[Texas], 
+	[City].[State Province].[State Province].[Florida]}
+SELECT 
+{Measures.Profit, 
+Measures.Quantity,
+Measures.[Avg Unit Profit]} on 0,
+[States] ON ROWS
+FROM [WWISales]

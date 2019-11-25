@@ -1,0 +1,10 @@
+-- Filter
+
+-- show total sales from products with profit over $1,000,000
+SELECT 
+	Measures.[Total Excluding Tax] ON COLUMNS, 
+	FILTER(
+		[Stock Item].[Stock Item].[Stock Item].Members, 
+		Measures.Profit >1000000
+	) on rows
+FROM [WWISales]

@@ -1,0 +1,18 @@
+-- Tuples
+-- colum header
+SELECT 
+	Measures.Profit ON COLUMNS
+FROM [WWISales]
+WHERE [Stock Item].Color.Color.Gray;
+
+-- no column header
+SELECT 
+FROM [WWISales]
+WHERE(Measures.Profit, [Stock Item].Color.Color.Gray);
+
+-- columns and rows , filtered
+SELECT 
+	[Measures].[Profit] ON 0
+	,[City].[State Province].[State Province].Louisiana ON 1
+FROM [WWISales]
+WHERE[Stock Item].Color.Color.Gray;

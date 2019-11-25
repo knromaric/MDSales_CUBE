@@ -1,0 +1,43 @@
+-- ORDER 
+SELECT 
+	Measures.Profit ON 0, 
+{
+	--ORDER(DIMENSION, MEASURE TO SORT BY , ASC OR DESC)
+	ORDER([City].[State Province].[State Province].Members, Measures.Profit, DESC),
+	City.[State Province].[All]
+} ON ROWS
+FROM 
+[WWISales]
+WHERE 
+[Stock Item].[Color].&[Gray];
+
+
+-- HEAD 
+SELECT 
+Measures.Profit ON 0, 
+{
+	-- HEAD(first your sort clause, then number of results)
+	HEAD(
+		ORDER([City].[State Province].[State Province].Members, Measures.Profit, DESC),
+		5),
+	City.[State Province].[All]
+} ON 1
+FROM [WWISales]
+WHERE [Stock Item].[Color].&[Gray];
+
+-- TOP/BOTTOM COUNT
+
+SELECT 
+	Measures.profit on 0, 
+	NON EMPTY BOTTOMCOUNT(City.[State Province].[State Province].Members, 10, Measures.profit) ON 1
+FROM [WWISales]
+WHERE [Stock Item].[Color].&[Gray];
+
+-- HANDLING NULL VALUES
+	-- total sales for 5 least profitables stock item
+SELECT NON EMPTY
+	MeasureS.[Total Excluding Tax] ON 0, 
+	NON EMPTY BOTTOMCOUNT(
+	[Stock Item].[Stock Item].[Stock Item].Members, 5, Measures.Profit) ON 1
+FROM
+[WWISales]

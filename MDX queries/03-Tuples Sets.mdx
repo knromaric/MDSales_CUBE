@@ -1,0 +1,35 @@
+-- TUPLE SETS 
+-- notice no {}
+
+-- total profit for the Louisina state for the gray and medium size item
+SELECT 
+	[Measures].[Profit] ON 0
+	, [City].[State Province].[State Province].Louisiana ON 1
+FROM [WWISales]
+WHERE 
+	([Stock Item].[Color].&[Gray],
+		[Stock Item].[Size].&[M]);
+
+-- total profit for the Louisina state for the gray and medium size item ONLY IN 2016
+SELECT 
+	[Measures].[Profit] ON 0
+	, [City].[State Province].[State Province].Louisiana ON 1
+FROM [WWISales]
+WHERE 
+	([Stock Item].[Color].&[Gray],
+		[Stock Item].[Size].&[M], 
+		[Invoice Date].[Calendar Year].&[2016]);
+
+--total profit for the Louisina state for the gray and medium size item ONLY IN 2016, 2015, 2014
+
+SELECT 
+	{
+	([Measures].[Profit], [Invoice Date].[Calendar Year].&[2016]),
+	([Measures].[Profit], [Invoice Date].[Calendar Year].&[2015]),
+	([Measures].[Profit], [Invoice Date].[Calendar Year].&[2014])
+	} ON 0,
+	[City].[State Province].[State Province].Louisiana ON 1
+FROM [WWISales]
+WHERE
+	([Stock Item].[Color].&[Gray],
+		[Stock Item].[Size].&[M]);

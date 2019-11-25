@@ -1,0 +1,26 @@
+-- default select statement in MDX
+SELECT 
+FROM [WWISales];
+
+-- ON COLUMNS 
+SELECT 
+	[Measures].[Profit] ON COLUMNS
+FROM [WWISales];
+
+-- ON ROWS
+SELECT 
+	[Measures].[Profit] ON COLUMNS
+	, [City].[State Province].[State Province].Louisiana ON ROWS
+FROM [WWISales];
+
+-- SETS 
+SELECT 
+	{Measures.Profit, Measures.Quantity} ON COLUMNS
+	, [City].[State Province].[State Province].[Louisiana] ON ROWS
+FROM [WWISales];
+
+SELECT 
+{Measures.Profit, Measures.Quantity} ON COLUMNS,
+{[City].[State Province].[State Province].[Louisiana],
+[City].[State Province].[State Province].[Florida]} ON ROWS
+FROM [WWISales];

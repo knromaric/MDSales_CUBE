@@ -1,0 +1,35 @@
+-- DESCENDANTS
+
+--CHOOSE ALL ITEMS FROM A hierarchy
+
+SELECT 
+Measures.Profit ON columns, 
+DESCENDANTS(
+	[City].[Hierarchy].[State Province].&[Louisiana], 
+	[City].[Hierarchy].[City Key]) ON ROWS
+FROM 
+[WWISales];
+
+SELECT 
+Measures.Profit ON columns, 
+DESCENDANTS(
+	[City].[Hierarchy].[State Province].&[Louisiana], 
+	[City].[Hierarchy].[City Key], BEFORE) ON ROWS
+FROM 
+[WWISales];
+
+SELECT 
+Measures.Profit ON columns, 
+DESCENDANTS(
+	[City].[Hierarchy].[State Province].&[Louisiana], 
+	[City].[Hierarchy].[City Key], AFTER) ON ROWS
+FROM 
+[WWISales];
+
+SELECT 
+Measures.Profit ON columns, 
+DESCENDANTS(
+	[City].[Hierarchy].[State Province].&[Louisiana], 
+	[City].[Hierarchy].[City Key], SELF_AND_BEFORE) ON ROWS
+FROM 
+[WWISales];

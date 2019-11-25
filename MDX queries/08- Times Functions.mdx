@@ -1,0 +1,28 @@
+-- Time Functions
+
+-- OPENINGPERIOD (Return the first period in the attribute, from this parent attribute)
+
+SELECT 
+	Measures.Profit ON 0,
+	OPENINGPERIOD(
+		[Invoice Date].[CY].[Date], 
+		[Invoice Date].[CY].[CY2016]) ON 1
+FROM [WWISales];
+
+-- PROFIT OF THE LAST DAY OF THE CALENDAR YEAR 2015
+SELECT
+	Measures.Profit ON 0,
+	CLOSINGPERIOD(
+		[Invoice Date].[CY].[Date], 
+		[Invoice Date].[CY].[CY2015]) ON 1
+FROM [WWISales] ;
+
+-- PARALLELPERIOD (what is the interval, number of intervals prior, starting point)
+SELECT 
+	Measures.Profit ON 0, 
+	PARALLELPERIOD (
+		[Invoice Date].CY.Year,
+		1,
+		[Invoice Date].CY.CY2015) ON 1
+FROM [WWISales] ;
+	

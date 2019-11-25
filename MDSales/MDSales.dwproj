@@ -36,12 +36,16 @@
       <FullPath>New Customer LU.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Stock Item.dim</Name>
       <FullPath>Stock Item.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Date.dim</Name>
-      <FullPath>Date.dim</FullPath>
+      <Name>City.dim</Name>
+      <FullPath>City.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

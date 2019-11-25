@@ -1,0 +1,28 @@
+-- FUNCTIONS
+--First Browse the functions tab
+
+--members not in a hierarchy
+
+SELECT 
+Measures.Profit ON 0,
+City.[State Province].[State Province].Members ON 1
+FROM [WWISales]
+WHERE [Stock Item].[Color].[Color].Gray;
+
+-- members with the ALL hierarchy
+
+SELECT
+	Measures.Profit ON 0,
+	City.[State Province].Members ON 1 
+FROM
+	[WWISales]
+WHERE [Stock Item].[Color].[Color].Gray;
+
+-- All as a GRAND TOTAL 
+
+SELECT 
+	Measures.Profit ON 0,
+	{City.[State Province].[State Province].Members,
+	City.[State Province].[All]} ON 1
+FROM 	[WWISales]
+WHERE [Stock Item].[Color].[Color].Gray;
